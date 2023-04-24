@@ -1,0 +1,181 @@
+.recommended {
+    background: $grey-color;
+
+
+    &.recommended-services-page {
+        margin-top: 80px;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    &__container {
+        padding-top: 30px;    }
+
+    &__head {
+    }
+
+    &__head-link {
+    }
+
+    &__head-title {
+        margin: 5px 0 30px 0;
+        // @include title (700, 30px, 37px, $white-color);
+        // @include gradient-text;
+        // @media (min-width: $breakpoint-md) {
+        //     font-size: 38px;
+        //     line-height: 46px;
+        // }
+    }
+
+    &__cards {
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+        @media (min-width: $breakpoint-md){
+            flex-flow: row wrap;
+        }
+        
+    }
+
+    &__card {
+        background: #FFFFFF;
+        border-radius: 8px;
+        overflow: hidden;
+        @media (min-width: $breakpoint-md){
+            flex: 1 1 40%;
+        }
+        @media (min-width: $breakpoint-lg){
+            flex: 1 1 30%;
+        }
+    }
+
+    &__card-image {
+        display: block;
+        width: 100%;
+        height: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+
+        // &.bg-01{
+        //     background: url(../images/Publication-1.jpg) center/cover no-repeat;
+        // }
+        // &.bg-02{
+        //     background: url(../images/Publication-2.jpg) center/cover no-repeat;
+        // }
+        // &.bg-03{
+        //     background: url(../images/Publication-3.jpg) center/cover no-repeat;
+        // }
+        // &.bg-04{
+        //     background: url(../images/Publication-4.jpg) center/cover no-repeat;
+        // }
+        // &.bg-05{
+        //     background: url(../images/Publication-5.jpg) center/cover no-repeat;
+        // }
+    }
+
+    &__card-body {
+        padding: 30px;
+    }
+
+    &__card-title {
+        text-decoration: none;
+        @include title (700, 16px, 20px, $regular-color);
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__card-subtitle {
+        margin: 15px 0;
+        @include title (700, 12px, 15px, $grey-color-text);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+
+    &__card-copy {
+        padding-top:15px;
+        @include title (400, 14px, 22px, #000000);
+        border-top: 4px solid $grey-separator-color;
+    }
+
+
+    // SWITCH
+
+    &__switch {
+        margin-bottom: 30px;
+    
+    
+    }
+    
+    &__box {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    &__switch input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    &__switch input + label {
+        @include title (700, 16px, 20px, $main-color );
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 234px;
+        height: 42px;
+        border-radius: 12px;
+        background: $grey-separator-color;
+        position: relative;
+    }
+    
+    &__switch input + label::before{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 114px;
+        height: 38px;
+        background: $white-color;
+        border-radius: 10px;
+        transition: all .3s linear;
+    }
+    
+    &__switch input:checked + label::before{
+        transform: translateX(101%);
+    }
+    
+    &__witch input:hover + label::before{
+        background: $grey-color;
+    }
+    
+    &__switch input:focus + label::before{
+        background: $grey-color;
+    }
+    
+    &__switch input + label span {
+        flex: 0 0 50%;
+        position: relative;
+    }
+}
+
+.recommended-page {
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+    &__cards {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+

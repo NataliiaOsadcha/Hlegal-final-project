@@ -1,0 +1,25 @@
+@import 'fonts';
+@import 'reset';
+@import 'vars';
+@import 'global';
+@import 'header';
+
+// main
+
+@import 'experience';
+@import 'services';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import 'team';
+@import 'clients';
+@import 'recommended';
+@import 'publications';
+@import 'about';
+@import 'achievements';
+
+@import 'footer';
+
+
+// ! CONTACTS PAGE
+
+@import 'contacts'

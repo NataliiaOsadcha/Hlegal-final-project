@@ -1,0 +1,150 @@
+html, body {
+	scroll-behavior: smooth;
+	position: relative;
+}
+
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.wrapper {
+	position: relative;
+	background: $gradient-super-soft;
+	border-radius: 0px 0px 12px 12px;
+	&::before {
+		content: '';
+		height: 10px;
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		bottom: -10px;
+		background: #CACADB;
+		border-radius: 0px 0px 12px 12px;	}
+	&::after {
+		content: '';
+		height: 10px;
+		position: absolute;
+		left: 40px;
+		right: 40px;
+		bottom: -20px;
+		background: #E7E7F2;
+		border-radius: 0px 0px 12px 12px;	}
+}
+
+.wrapper-white {
+	background: $white-color;
+	&::before {
+		content: '';
+		display: none;	}
+	&::after {
+		content: '';
+		display: none;	}
+	}
+
+
+
+
+.container {
+	// от 0px до бесконечности 
+	padding: 0 30px;
+	position: relative;
+
+	@media (min-width: $breakpoint-md) {
+		// от 767px до бесконечности
+		max-width: 708px;
+		margin: 0 auto;
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		// от 1024px до бесконечности
+		max-width: 964px;
+	}
+
+	@media (min-width: $breakpoint-xl) {
+		// от 1440px до бесконечности
+		max-width: 1380px;
+	}
+
+	@media (min-width: $breakpoint-xxl) {
+		// от 1920px до бесконечности
+		max-width: 1660px;
+	}
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+	color: $white-color;
+}
+
+.page-link{
+		text-decoration: none;
+        @include title (700, 14px, 17px, $regular-color);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-right: 10px;
+        position: relative;
+        &:hover {
+            color: $accent-color;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            transform: rotate(-45deg) translate(20%, -50%);
+            border-bottom: 2px solid $regular-color;
+            border-right: 2px solid $regular-color;
+        }
+
+        &:hover::before{
+            border-bottom: 2px solid $accent-color;
+            border-right: 2px solid $accent-color;
+        }
+}
+
+.hidden {
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+}
+
+.button {
+	display: block;
+	margin: 0 auto;
+	padding: 20px 30px;
+	font-weight: 700;
+	color: $white-color;
+	background: $regular-color;
+	box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+	border-radius: 12px;
+	cursor: pointer;
+	&:hover {
+		background: $regular-hover-color;
+	}
+	&:active {
+		background: $regular-active-color;
+	}
+}
+
+	.general_title {
+		@include title (700, 30px, 36px, $white-color);
+        @include gradient-text;
+        @media (min-width: $breakpoint-md) {
+            font-size: 38px;		
+            line-height: 46px;
+        }
+	}
+		
+
+
+
+
+

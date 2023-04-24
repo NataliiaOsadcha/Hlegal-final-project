@@ -1,0 +1,181 @@
+.about-intro {
+     padding: 30px 0 30px 0;
+         @media (min-width: $breakpoint-md) {
+        padding: 60px 0;
+        }
+
+		&__container {
+            @media (min-width: $breakpoint-lg){
+                display: flex;
+                gap: 30px;
+            }
+
+		}
+
+        &__title-box {
+            @media (min-width: $breakpoint-lg) {
+                flex: 1 1 60%;
+            }
+            @media (min-width: $breakpoint-xl) {
+                flex: 1 1 70%;
+            }
+        }
+
+		&__title {
+        margin-bottom: 30px;
+        }
+
+        &__text {
+        margin-bottom: 30px;
+        font-size: 19px;
+
+        }
+
+		&__info-box {
+            border-left: 4px solid $grey-separator-color ;
+            padding-left: 30px;
+            @media (min-width: $breakpoint-lg) {
+                flex: 1 1 40%;
+            }
+            @media (min-width: $breakpoint-xl) {
+                flex: 1 1 30%;
+            }
+            p {
+                margin: 10px 0 40px 0;
+                color: $main-color;
+                &:last-child {
+                    margin: 10px 0 0px 0;
+                }
+            }
+
+		}
+
+		&__info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                @include title (700, 36px, 44px, $white-color);
+                @include gradient-text;
+            }
+		}
+
+		&__info-svg {
+            svg {
+                display: block;
+                width: 32px;
+                height: 32px;
+                fill: $accent-color
+            }
+		}
+}
+
+
+
+
+.about {
+    height: 114px;
+    background:  linear-gradient(264.71deg, #F01432 0%, #323264 30%), url(../images/Team.jpg) 0 0/cover no-repeat;
+    background-blend-mode: screen, normal;
+
+
+    @media (min-width: $breakpoint-md) {
+        height: 233px;
+    }
+    @media (min-width: $breakpoint-lg) {
+        height: 311px;
+    }
+    @media (min-width: $breakpoint-xl) {
+        height: 438px;
+    }
+    @media (min-width: $breakpoint-xxl) {
+        height: 585px;
+    }
+
+
+        &__text-box {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        &__text {
+            @include title (700, 36px, 44px, $white-color);
+                letter-spacing: 13px;
+                text-transform: uppercase;
+                opacity: 0.8;
+                text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+                position: relative;
+
+                
+                @media (min-width: $breakpoint-md) {
+                    @include title (700, 46px, 56px, $white-color);
+                    letter-spacing: 63px;
+                    
+                }              
+
+                @media (min-width: $breakpoint-lg) {
+                    @include title (700, 86px, 105px, $white-color);
+                    
+                }  
+                
+                @media (min-width: $breakpoint-xl) {
+                    @include title (700, 96px, 105px, $white-color);
+                    
+                } 
+
+        }
+}
+
+.about-more {
+    padding: 30px 0 60px 0;
+         @media (min-width: $breakpoint-md) {
+        padding: 60px 0;
+        }
+
+		&__container {
+            @media (min-width: $breakpoint-lg){
+                display: flex;
+                gap: 60px;
+            }
+		}
+
+        &__text-box {
+            @media (min-width: $breakpoint-lg) {
+                flex: 1 1 60%;
+            }
+            @media (min-width: $breakpoint-xl) {
+                flex: 1 1 70%;
+            }
+            
+
+        }
+
+		&__text {
+        margin-bottom: 30px;
+        font-size: 19px;
+
+
+		}
+
+        &__title-box {
+            @media (min-width: $breakpoint-lg) {
+                flex: 1 1 30%;
+            }
+            @media (min-width: $breakpoint-xl) {
+                flex: 1 1 20%;
+            }
+            
+        }
+
+		&__title {
+		}
+}
+
+
+
+

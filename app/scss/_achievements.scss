@@ -1,0 +1,75 @@
+
+
+// <!-- SLIDER -->
+
+.achievements {
+    padding: 30px 60px 46px;
+    background: $grey-color;
+
+    &__container{
+
+      @media (min-width: $breakpoint-lg){}
+
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        @include title (700, 14px, 17px, $main-color); 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__swiper2 {
+      position: relative;
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+        width: 255px;
+        height: 90px;
+        border-radius: 12px;
+        background: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__image {
+            
+    }
+
+    
+    &__pagination {
+        
+        &.swiper-pagination{
+          position: absolute;
+          bottom: -56px;
+        }
+        .swiper-pagination-bullet {
+          width: 16px;
+          height: 16px;
+          background: $regular-color;
+          opacity: 0.2;
+          &:hover {
+            opacity: 0.6;
+
+          }
+
+
+
+          &.swiper-pagination-bullet-active{
+            background: $regular-color;
+            opacity: 1;
+
+
+    
+          }
+    
+        }
+    
+      }
+}
